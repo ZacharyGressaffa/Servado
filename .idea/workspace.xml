@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6bb9b7da-dcab-43a2-ab07-68231a83805c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/DrawerCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MenuItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MyMenu/CustomCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MyMenu/CustomCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MyMenu/MiniCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MyMenu/MiniCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MyMenu/ReviewCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MyMenu/ReviewCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MyMenu/ReviewPop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MyMenu/ReviewPop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/MyMenu/Sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Components/TempDrawer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/LoggedIn/Home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/LoggedIn/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/LoggedIn/LoggedIn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/LoggedIn/Menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/LoggedIn/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/LoggedIn/Profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/LoggedIn/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Navigation/LoggedNav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/Navigation/Nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/NotLoggedIn/LoginPage/Login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/NotLoggedIn/LoginPage/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/NotLoggedIn/LoginPage/SigninPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/NotLoggedIn/LoginPage/SigninPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/NotLoggedIn/SignupPage/Signup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/NotLoggedIn/SignupPage/Signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/NotLoggedIn/SignupPage/SignupPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/NotLoggedIn/SignupPage/SignupPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/testBeverages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Webapp/web/src/testProducts.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HNQSeLeq3qmerzwUY68x77mA7Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/zgres/cmps411Project2",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zgres\Servado\Webapp\web\src" />
+      <recent name="C:\Users\zgres\Servado\Webapp\web\src\Components\MyMenu" />
+      <recent name="C:\Users\zgres\Servado\Webapp\web\src\Components" />
+      <recent name="C:\Users\zgres\Servado\Webapp\web\src\LoggedIn" />
+      <recent name="C:\Users\zgres\Servado\Webapp\web\src\Navigation" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bb9b7da-dcab-43a2-ab07-68231a83805c" name="Changes" comment="" />
+      <created>1668123062748</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668123062748</updated>
+      <workItem from="1668123064128" duration="292000" />
+      <workItem from="1668456290518" duration="3212000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
