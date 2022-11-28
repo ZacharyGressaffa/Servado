@@ -1,23 +1,26 @@
-import { StyleSheet, Text, View, Button, FlatList, Dimensions } from 'react-native'
+import { StyleSheet, Text, View, FlatList, Dimensions } from 'react-native'
 import { useNavigation } from '@react-navigation/core'
 
 import { colors } from '../global/styles.js';
 import { restaurantData } from '../global/data';
 
-import React from 'react'
+import React,{useState} from 'react'
 import RestaurantCard from '../components/RestaurantCard.js';
 
 const SCREEN_WIDTH = Dimensions.get('window').width
 
 export default function RestaurantScreen({ navigation }) {
+
+  const [indexCheck, setIndexCheck] = useState("0")
   const { navigate } = useNavigation();
+
     return (
     <View style={styles.container}>
       <View style={styles.cardView}>
         {/*<Button
           title="Go to Menu"              
           onPress ={()=>{navigation.navigate("Menu",{restaurantData})}}
-    />*/}
+        />*/}
           <View style ={styles.headerTextView}>
               <Text style ={styles.headerText}>Where Do You Want To Eat?</Text>
           </View>        
@@ -26,17 +29,22 @@ export default function RestaurantScreen({ navigation }) {
               style={{marginTop:10, marginBottom:10}}
               data={restaurantData}
               vertical ={true}
-              keyExtractor={(item,index)=>index.toString()}
-              renderItem={({ item,index }) => (
+              keyExtractor={(restaurantData => restaurantData.id)}
+              extraData={indexCheck}
+              renderItem={({ item, index }) => (
                 <RestaurantCard 
                   screenWidth={SCREEN_WIDTH*.94}
                   images={item.images}
                   restaurantName={item.restaurantName}
                   businessAddress={item.businessAddress}
-                  OnPressRestaurantCard ={()=>{navigation.navigate("Menu",{id:index,restaurant:item.restaurantName})}}
+                  productData={item.productData}
+                  OnPressRestaurantCard ={()=>{navigation.navigate("Menu",{index});
+                }}
                     
                 />
               )}
+              showsVerticalScrollIndicator={false}
+
             />
         </View>
       </View>        

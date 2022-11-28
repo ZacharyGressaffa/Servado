@@ -8,7 +8,8 @@ export default function MenuCard({
     meal,
     price,
     images,
-    screenWidth
+    screenWidth,
+    productData
     }){
     
     const [check1, setCheck1] = useState(false);
@@ -48,8 +49,6 @@ const styles =StyleSheet.create({
         padding:15,
         borderRadius:30,
         marginVertical:9,
-        borderWidth:.5
-        
         
     },
     image:{

@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View, Button, FlatList, TouchableOpacity, Dimensions } from 'react-native'
-import React,{Component } from 'react'
-
+import { StyleSheet, Text, View, Button, FlatList, SectionList, TouchableOpacity, Dimensions, Pressable } from 'react-native'
+import React,{ Component } from 'react'
+import { useNavigation } from '@react-navigation/core'
 
 import { restaurantData, productData } from '../global/data';
 import MenuCard from '../components/MenuCard';
@@ -9,16 +9,55 @@ import { colors } from '../global/styles.js';
 const SCREEN_WIDTH = Dimensions.get('window').width
 //const initialLayout = SCREEN_WIDTH;
 
+export default class MenuScreen extends Component {
+  render() {
+    const index = this.props.route.params.index
+    const {meal,price,foodImages} = restaurantData[index].productData[0]
+  return (
+    <View style={styles.container}>
+      <View style={styles.cardView}>
+        <View style ={styles.headerTextView}>
+          <Text style ={styles.headerText}>What Do You Want To Eat From?</Text>
+        </View>
+        <TouchableOpacity onPress={() => {this.props.navigation.navigate('Cart')}}>
+          <View style ={styles.cartContainer}>
+            <View style ={styles.cartCounterContainer}>
+              <Text style ={styles.cartText}>Cart</Text>
+                <View style ={styles.cartCounter}>
+                  <Text style ={styles.cartNum}>0</Text>
+                </View>
+            </View>
+          </View>
+        </TouchableOpacity>
+        <View>
+          <View style ={{flex:1}}>
+            <View style ={styles.menuCard}>
+              <MenuCard
+                screenWidth={SCREEN_WIDTH*.9}
+                images={foodImages}
+                meal ={meal}
+                price ={price}
+                onPressMenuCard={()=>{this.props.navigation.navigate("Payment")}}
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  )
+  }
+  }
+{/*
+export default class MenuScreen extends Component {
 
-export default function MenuScreen({navigation, productData}) {
+  render() {
     return (
       <View style={styles.container}>
         <View style={styles.cardView}>
-          
         <View style ={styles.headerTextView}>
-          <Text style ={styles.headerText}>What Do You Want To Eat From {item.name}?</Text>
+          <Text style ={styles.headerText}>What Do You Want To Eat From?</Text>
         </View> 
-        <TouchableOpacity>
+        <TouchableOpacity   onPress={() => {this.props.navigation.navigate('Cart')}}>
               <View style ={styles.cartContainer}>
                 <View style ={styles.cartCounterContainer}>
                   <Text style ={styles.cartText}>Cart</Text>
@@ -27,32 +66,50 @@ export default function MenuScreen({navigation, productData}) {
                     </View>
                 </View>
               </View>
-            </TouchableOpacity>
+        </TouchableOpacity>
         <View>
         <View style ={{flex:1}}>
             <View style ={styles.menuCard}>
-                <FlatList 
+            <SectionList
+              sections={restaurantData}
+              keyExtractor={(_, index) => index + ''}
+              renderItem={({ item }) => <Item item={item} />}
+              renderSectionHeader={({ section }) => (
+                <MenuCard 
+                        screenWidth={SCREEN_WIDTH*.9}
+                        images={item.foodImages}
+                        meal ={item.meal}
+                        price ={item.price}
+                        onPressMenuCard={()=>{this.props.navigation.navigate("Payment")}}
+                      />
+              )}
+            />
+            
+                {/*<FlatList 
                     style={{marginTop:10, marginBottom:10}}
                     data = {restaurantData}
-                    keyExtractor = {(item,index)=>index.toString()}
+                    keyExtractor= {item =>item.id}
                     renderItem = {({item,index})=>(
                       <MenuCard 
                         screenWidth={SCREEN_WIDTH*.9}
                         images={item.foodImages}
                         meal ={item.meal}
                         price ={item.price}
-                        onPressMenuCard={()=>{navigation.navigate("Payment",{id:index,restaurant:item.restaurantName})}}
+                        onPressMenuCard={()=>{this.props.navigation.navigate("Payment")}}
                       />
+                  
                     )}
-                />
+                    
+                    />
             </View>  
         </View>
         </View>
         </View>
       </View>
   )
+  } 
 }
-
+*/}
 const styles = StyleSheet.create({
   container: {
     flex: 1,

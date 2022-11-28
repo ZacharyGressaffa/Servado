@@ -4,9 +4,10 @@ import { useNavigation } from '@react-navigation/core'
 import { createStackNavigator } from '@react-navigation/stack';
 
 import LoginScreen from './screens/LoginScreen';
-import HomeScreen from './screens/HomeScreen';
+//import HomeScreen from './screens/HomeScreen';
 import RestaurantScreen from './screens/RestaurantScreen';
 import MenuScreen from './screens/MenuScreen';
+import CartScreen from './screens/CartScreen';
 import PaymentScreen from './screens/PaymentScreen';
 import { auth } from './firebase'
 
@@ -42,7 +43,7 @@ export default function App() {
         {/*<Stack.Screen
           name="Home"
           component={HomeScreen}
-  />*/}
+        />*/}
         <Stack.Screen
           name="Restaurants"
           component={RestaurantScreen}
@@ -50,6 +51,10 @@ export default function App() {
         <Stack.Screen
           name="Menu"
           component={MenuScreen}
+        />
+        <Stack.Screen
+          name="Cart"
+          component={CartScreen}
         />
         <Stack.Screen
           name="Payment"
