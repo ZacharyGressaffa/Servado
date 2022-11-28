@@ -16,7 +16,7 @@ export const restaurantData = [
     meal:"Crawfish Etouffee", 
     price:13.99,
     foodImages:require('../images/crawfishEto.jpeg'),
-    checked:false}],
+    checked:false,id:1}],
     id:1},
 
     {restaurantName:"Pete's Pizzera", 
@@ -26,7 +26,7 @@ export const restaurantData = [
     meal:"Buffulo Chicken Pizza", 
     price:14.50,
     foodImages:require('../images/buffpizza.jpeg'),
-    checked:false}],
+    checked:false, id:2}],
     id:2},
 
     {restaurantName:"Hot Hogs Grill", 
@@ -36,7 +36,7 @@ export const restaurantData = [
     meal:"Brisket Plate with Sides", 
     price:10.99,
     foodImages:require('../images/brisket.jpeg'),
-    checked:false}],
+    checked:false, id:3}],
     id:3},
 
     {restaurantName:"Meat U There", 
@@ -46,7 +46,7 @@ export const restaurantData = [
     meal:"Cheese Burger with Fries", 
     price:12.49,
     foodImages:require('../images/burgernfries.jpeg'),
-    checked:false}],
+    checked:false, id:4}],
     id:4},
     
 ];

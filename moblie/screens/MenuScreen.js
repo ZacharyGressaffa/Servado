@@ -47,69 +47,6 @@ export default class MenuScreen extends Component {
   )
   }
   }
-{/*
-export default class MenuScreen extends Component {
-
-  render() {
-    return (
-      <View style={styles.container}>
-        <View style={styles.cardView}>
-        <View style ={styles.headerTextView}>
-          <Text style ={styles.headerText}>What Do You Want To Eat From?</Text>
-        </View> 
-        <TouchableOpacity   onPress={() => {this.props.navigation.navigate('Cart')}}>
-              <View style ={styles.cartContainer}>
-                <View style ={styles.cartCounterContainer}>
-                  <Text style ={styles.cartText}>Cart</Text>
-                    <View style ={styles.cartCounter}>
-                      <Text style ={styles.cartNum}>0</Text>
-                    </View>
-                </View>
-              </View>
-        </TouchableOpacity>
-        <View>
-        <View style ={{flex:1}}>
-            <View style ={styles.menuCard}>
-            <SectionList
-              sections={restaurantData}
-              keyExtractor={(_, index) => index + ''}
-              renderItem={({ item }) => <Item item={item} />}
-              renderSectionHeader={({ section }) => (
-                <MenuCard 
-                        screenWidth={SCREEN_WIDTH*.9}
-                        images={item.foodImages}
-                        meal ={item.meal}
-                        price ={item.price}
-                        onPressMenuCard={()=>{this.props.navigation.navigate("Payment")}}
-                      />
-              )}
-            />
-            
-                {/*<FlatList 
-                    style={{marginTop:10, marginBottom:10}}
-                    data = {restaurantData}
-                    keyExtractor= {item =>item.id}
-                    renderItem = {({item,index})=>(
-                      <MenuCard 
-                        screenWidth={SCREEN_WIDTH*.9}
-                        images={item.foodImages}
-                        meal ={item.meal}
-                        price ={item.price}
-                        onPressMenuCard={()=>{this.props.navigation.navigate("Payment")}}
-                      />
-                  
-                    )}
-                    
-                    />
-            </View>  
-        </View>
-        </View>
-        </View>
-      </View>
-  )
-  } 
-}
-*/}
 const styles = StyleSheet.create({
   container: {
     flex: 1,

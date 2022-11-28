@@ -9,7 +9,7 @@ export default function MenuCard({
     price,
     images,
     screenWidth,
-    productData
+    //productData
     }){
     
     const [check1, setCheck1] = useState(false);
@@ -40,7 +40,6 @@ export default function MenuCard({
 
 const styles =StyleSheet.create({
     container:{
-        flex:1,
         backgroundColor:"white",
         elevation:4,
         shadowOpacity:0.5,
